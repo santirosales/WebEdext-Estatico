@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Web EdEXT</title>
+
+    <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="/iconos/fontawesome/js/all.min.js"></script> 
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- barra lateral -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <h3 class="d-inline p-2">
+                  EdEXT
+               </h3>
+               <div class="d-inline p-2">
+                  <span class="fa-stack" style="vertical-align: top;">
+                     <i class="far fa-circle fa-stack-2x"></i>
+                     <i class="fas fa-graduation-cap fa-stack-1x"></i>
+                  </span> 
+               </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="">
+                    <a href="#miperfilSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Mi perfil</a>
+                    <ul class="collapse list-unstyled" id="miperfilSubmenu">
+                        <li>
+                            <a class="link" href="perfil.html">Opciones del perfil</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Inscripciones</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a class="link" href="vacia.html">Inscribirme</a>
+                        </li>
+                        <li>
+                            <a class="link" href="vacia.html">Resultados</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#cursosSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Cursos</a>
+                    <ul class="collapse list-unstyled" id="cursosSubmenu">
+                        <li>
+                            <a class="link" href="vacia.html">Alta curso</a>
+                        </li>
+                        <li>
+                            <a class="link" href="vacia.html">Alta edición</a>
+                        </li>
+                        <li>
+                            <a class="link" href="vacia.html">Alta programa</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#categoriasSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Categorías</a>
+                    <ul class="collapse list-unstyled" id="categoriasSubmenu">
+                        <li>
+                            <a class="link" href="vacia.html">Social</a>
+                        </li>
+                        <li>
+                            <a class="link" href="vacia.html">Industrial</a>
+                        </li>
+                        <li>
+                            <a class="link" href="vacia.html">Educativos</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Interdisiplinario</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="link" href="#">Salir</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- contenedor pagina -->
+        <div id="content">
+            <!-- menu del usuario -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto float-right">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">helsinki</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="contenido">
+               <h2>Contenido de la página principal</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+               <div class="line"></div>
+
+               <h2>Lorem Ipsum Dolor</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+            $('a.link').click(function(e){
+               e.preventDefault();
+               $("#contenido").load($(this).attr('href'));
+            });
+        });
+    </script>
+</body>
+
+</html>
